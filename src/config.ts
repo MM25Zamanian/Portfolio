@@ -6,7 +6,7 @@
  */
 
 export default {
-  environment: 'development',
-  appName: 'MyApplication',
-  appDescription: 'MyApplication description',
+  environment: 'production',
+  appName: 'mm25zamanian',
+  appDescription: 'mm25zamanian personal portfolio description',
 };
