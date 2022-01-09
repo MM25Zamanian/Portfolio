@@ -1,17 +1,22 @@
 import type { Route as RouteBase } from '@vaadin/router';
 
-interface RouteIcon {
+interface RB {
+  path: string;
+  redirect: string;
+}
+
+interface RouteIcon extends RB {
   icon?: string;
 }
 
-interface RouteLabel {
+interface RouteLabel extends RB {
   label?: string;
 }
 
-interface RouteNavigation {
+interface RouteNavigation extends RB {
   show_in_nav?: boolean;
 }
 
-type Route = RouteNavigation | RouteLabel | RouteIcon | RouteBase;
+type Route = RouteBase | RouteNavigation | RouteLabel | RouteIcon;
 
 export default Route;
